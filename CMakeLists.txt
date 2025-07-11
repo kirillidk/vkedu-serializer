@@ -12,3 +12,8 @@ target_include_directories(example
   PRIVATE
     ${PROJECT_SOURCE_DIR}/include
 )
+
+if(BUILD_TESTS)
+    enable_testing()
+    add_subdirectory(tests)
+endif()
